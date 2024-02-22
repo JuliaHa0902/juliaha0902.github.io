@@ -50,6 +50,7 @@ $(document).ready(function(){
                 if (characterBottom < 40) {
                     $("#block").stop(true, true);
                     $("#block").css ('animation', 'none');
+                    $("#guide").hide();
                     alert ("Game Over!");
                     gameStart = false;
                     $("#start-button").show();
