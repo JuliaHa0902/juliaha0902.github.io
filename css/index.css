@@ -16,7 +16,7 @@ h2 {
     font-weight: bold;
 }
 
-li {
+.li-sm {
     font-size: 13px;
     margin: 5px 0;
 }
@@ -166,7 +166,7 @@ li {
 .timeline {
     position: relative;
     max-width: 600px;
-    margin: 50px auto;
+    margin: 20px auto 50px auto;
 }
 
 .timeline::before {
@@ -248,39 +248,86 @@ li {
     white-space: nowrap;
 }
 
+/* Hide scrollbar for Chrome, Safari and Opera */
+.project-slider::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.project-slider {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.project-slider-container {
+    position: relative;
+}
+
+#scroll-left-btn {
+    position: absolute;
+    left: 40px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #DD7991;;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgb(198, 198, 198);
+}
+
+#scroll-left-btn:hover {
+    background-color: #DD7991;;
+    color: white;
+    cursor: pointer;
+}
+
+#scroll-right-btn {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: #DD7991;;
+    border-radius: 50%;
+    border: none;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+    box-shadow: 2px 2px 5px rgb(198, 198, 198);
+}
+
+#scroll-right-btn:hover {
+    background-color: #DD7991;;
+    color: white;
+    cursor: pointer;
+}
+
 .project {
     background-color: #F9E7E5;
     border-radius: 20px;
     padding: 20px;
     width: 300px;
+    min-height: 300px;
     display: inline-block;
     margin: 10px 20px;
     text-align: center;
     white-space: normal;
+    vertical-align:top;
 }
 
 .contact-me {
     background-image: linear-gradient(to bottom right, #E6A4B4, #FFEDA3);
     color: #6e4546;
-    padding: 80px 20px;
+    padding: 150px 20px;
     text-align: center;
 }
 
-/* .pink-button {
-    background-color: #E6A4B4;
-    transition: 0.5s;
-    padding: 8px 15px;
-    border-radius: 20px;
-    border-style: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
+.ml-20 {
+    margin-left: 20px;
 }
-
-.pink-button:hover {
-    background-color: #984e5f;
-    color: white;
-} */
 
 .floating {
     position: fixed;
@@ -392,7 +439,7 @@ li {
 
 #guide {
     position: absolute;
-    top: 50%;
+    top: 70%;
     left: 50%;
     z-index: 1;
     transform: translate(-50%, -50%);

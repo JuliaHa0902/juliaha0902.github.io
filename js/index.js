@@ -7,6 +7,14 @@ $(document).ready(function(){
     speed = 3
     score = 0
 
+    $("#scroll-right-btn").click (function() {
+        $(".project-slider").animate({scrollLeft: '+=380'}, 'slow');
+    });
+
+    $("#scroll-left-btn").click (function() {
+        $(".project-slider").animate({scrollLeft: '-=380'}, 'slow');
+    });
+
     $("#start-button").click (function() {
         gameStart = true;
         speed = START_SPEED;
@@ -42,7 +50,7 @@ $(document).ready(function(){
                 if (characterBottom < 40) {
                     $("#block").stop(true, true);
                     $("#block").css ('animation', 'none');
-                    alert ("Game Over!")
+                    alert ("Game Over!");
                     gameStart = false;
                     $("#start-button").show();
                     score = 0;

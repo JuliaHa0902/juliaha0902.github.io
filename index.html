@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <title>Julia's Personal Website</title>
-        <link rel="stylesheet" href="css/resume.css"/>
+        <link rel="stylesheet" href="css/index.css"/>
         <link rel="icon" href="images/favicon.ico"/>
         <link href="https://fonts.cdnfonts.com/css/anymore" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
@@ -18,7 +18,9 @@
                     <div class="job-title"><b>FULL STACK DEVELOPER</b></div>
                     <p>Welcome to my personal websilte!</p>
                     <p>I love programming, creating software, and participating in Competitive Programming Contests. 
-                        I am a developer with a keen focus on precision, consistently striving for continuous self-improvement.</p>
+                        I am a quick learner and a team player, and I am consistently striving for continuous self-improvement.
+                        I believe that I can be a valuable asset to any Software Engineering team.
+                    </p>
                     <br><br>
                     <button class="light-orange-button"><a href="Julia-Dung-Ha-resume.pdf" download="julia-dung-ha-resume">Download my resume</a></button>
                 </div>
@@ -148,9 +150,9 @@
                                     <div class="tag">REST API</div>
                                 </div>
                                 <ul>
-                                    <li>Leaded a team of 2, developed a web application using Flask, Jinja2, jQuery and REST API to cut down 50% ticket creation time, increased management efficiency. </li>
-                                    <li>Leaded a team of 3, developed a web application using Django, jQuery and AWS services such as RDS, EC2 to effectively manage policies. </li>
-                                    <li>Built a desktop application using Tkinter, ldap REST API, multi-threading and AWS services such as Cognito and DynamoDB to scan and collect reports about internal networks.</li>
+                                    <li class="li-sm">Leaded a team of 2, developed a web application using Flask, Jinja2, jQuery and REST API to cut down 50% ticket creation time, increased management efficiency. </li>
+                                    <li class="li-sm">Leaded a team of 3, developed a web application using Django, jQuery and AWS services such as RDS, EC2 to effectively manage policies. </li>
+                                    <li class="li-sm">Built a desktop application using Tkinter, ldap REST API, multi-threading and AWS services such as Cognito and DynamoDB to scan and collect reports about internal networks.</li>
                                 </ul>
                               </div>
                             </div>
@@ -167,9 +169,9 @@
                                     <div class="tag">REST API</div>
                                 </div>
                                 <ul>
-                                    <li>Leaded a team of 3, developed web dashboard using Dash, MongoDB, Panda, Docker and multi-threading to asynchronously update information, reduced 70% time in generating business reports and monitoring KPIs.</li>
-                                    <li>Leaded a team of 3, developed mobile applications using Flutter, SQLite, AWS Cognito to boost internal productivity </li>
-                                    <li>Utilized MVVM pattern, reviewed, debugged, tested and merged codes to the main codebase.</li>
+                                    <li class="li-sm">Leaded a team of 3, developed web dashboard using Dash, MongoDB, Panda, Docker and multi-threading to asynchronously update information, reduced 70% time in generating business reports and monitoring KPIs.</li>
+                                    <li class="li-sm">Leaded a team of 3, developed mobile applications using Flutter, SQLite, AWS Cognito to boost internal productivity </li>
+                                    <li class="li-sm">Utilized MVVM pattern, reviewed, debugged, tested and merged codes to the main codebase.</li>
                                 </ul>
                               </div>
                             </div>
@@ -192,7 +194,7 @@
                     <br>
                     <div class="white-box">
                         <h1>Awards</h1>
-                        <ul>
+                        <ul class="ml-20">
                             <li>Won the ticket to Google Code Jam to I/O for Women 2020</li>
                             <li>2nd prize in Vietnam National Olympiad of Informatics 2012</li>
                         </ul>
@@ -203,35 +205,55 @@
 
         <div class="projects">     
             <h1>Projects</h1>
-            <div class="project-slider">
-                <div class="project">
-                    <h2>To-do List</h2>
-                    <div class="white-tag-container">
-                        <div class="white-tag">Flutter</div>
-                        <div class="white-tag">Flask</div>
-                        <div class="white-tag">Flutter</div>
-                        <div class="white-tag">Flask</div>
-                        <div class="white-tag">Flutter</div>
-                        <div class="white-tag">Flask</div>
-                        <div class="white-tag">Flutter</div>
-                        <div class="white-tag">Flask</div>
+            <div class="project-slider-container">
+                <button id="scroll-left-btn">&#11207;</button>
+                <div class="project-slider">
+                    <div class="project">
+                        <h2>To-do List</h2>
+                        <div class="white-tag-container">
+                            <div class="white-tag">React Native</div>
+                            <div class="white-tag">React Hooks</div>
+                            <div class="white-tag">Async Storage</div>
+                        </div>
+                        <div> A mobile application using React Native to help create, update and keep track of to-dos.</div>
+                        <a href="https://github.com/JuliaHa0902/ReactNative">Source code</a>
                     </div>
-                    <div> Leaded a team of 7 people, built a To-do List application using React Native, JavaScripts and AsyncStorage</div>
-                    <a href="/">Source code</a>
+                    <div class="project">
+                        <h2>Wordle Telugu</h2>
+                        <div class="white-tag-container">
+                            <div class="white-tag">PHP</div>
+                            <div class="white-tag">JavaScript</div>
+                            <div class="white-tag">MySQL</div>
+                            <div class="white-tag">HTML</div>
+                            <div class="white-tag">CSS</div>
+                        </div>
+                        <div> An open-source, non-profit wordle game that support both English and Telugu language. I Leaded a team of 5, contributed to the game by adding 10 new features to the game such as importing words, exporting reports, caching previous games in the browser and share screenshots of the game when the players win.</div>
+                        <a href="https://github.com/JuliaHa0902/wordle">Source code</a>
+                    </div>
+                    <div class="project">
+                        <h2>Shelter Tracker</h2>
+                        <div class="white-tag-container">
+                            <div class="white-tag">Java</div>
+                            <div class="white-tag">JavaFX</div>
+                            <div class="white-tag">Android</div>
+                        </div>
+                        <div> An Object-oriented desktop and mobile app to track animal shelter, allow parsing JSON and XML files. I also refactored codes using Polymorphism Responsibility Pattern, Singleton pattern, replaced constructor with Factory method to enable low coupling. </div>
+                        <a href="https://github.com/JuliaHa0902/Shelter-Tracker">Source code</a>
+                    </div>
+                    <div class="project">
+                        <h2>Weather App</h2>
+                        <div class="white-tag-container">
+                            <div class="white-tag">Kotlin</div>
+                            <div class="white-tag">REST API</div>
+                            <div class="white-tag">Jetpack Compose</div>
+                        </div>
+                        <div>An Android application that displays the weather for user’s current location by fetching real-time data from Open Weather API</div>
+                        <a href="https://github.com/JuliaHa0902/ICS-342">Source code</a>
+                    </div>
                 </div>
-                <div class="project">
-                    <h2>To-do List</h2>
-
-                </div>
-                <div class="project">
-                    <h2>To-do List</h2>
-
-                </div>
-                <div class="project">
-                    <h2>To-do List</h2>
-
-                </div>
+                <button id="scroll-right-btn">&#11208;</button>
             </div>
+           
         </div>
 
         <div class="contact-me">
@@ -241,7 +263,7 @@
 
         <div class="game-container">
             <h1>Feeling bored?</h1>
-            <h2>Here's a dinosaur :)</h2>
+            <h2>Here's a little game :)</h2>
             <br><br>
             <div class="game">
                 <button id="start-button" class="start-button"></button>
@@ -255,5 +277,5 @@
 
         <button class="floating red-orange-button"><a href="mailto:juliaha0902@gmail.com">Contact me </a></button>
     </body>
-    <script src="js/resume.js"></script>
+    <script src="js/index.js"></script>
 </html>
